@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Moduri de a defini o functie in JavaScript</h1>
+    <script>
+        // Metoda 1 Clasica - Functia ce nu returneaza nimic
+        function sumaNr(a, b) {
+            console.log(a + b);
+        }
+        sumaNr(2, 3);
+ 
+        //Metoda 2 Clasica - Functia returneaza o valoare
+        function suma2(a, b) {
+            return a + b;
+        }
+        let mySuma = suma2(2, 3);
+        console.log(mySuma);
+
+        //Metoda 3 - Functia anonima
+        let suma = function (a, b) { return a + b};
+        console.log(suma(2, 3));
+
+        //Metoda 4 - Functia anonima de tip Arrow
+        var anon = (a, b) => a+b; //daca am o singura instructiune
+        console.log(anon(2, 3));
+
+        //Metoda 5 - Functia anonima de tip Arrow
+        var anon1 = (a, b) => {return a + b};
+        console.log(anon(2, 3));
+    </script>
+</body>
+</html>
